@@ -1,0 +1,122 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Heated Bed Installation",
+    "providerName": "HomeBound Pets",
+    "providerEmail": "setup@homebound.com",
+    "price": 45,
+    "rating": 4.7,
+    "slotsAvailable": 10,
+    "description": "Safety-certified heated bed setup and insulation check for your pet's favorite sleeping spot.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Home Comfort"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Salt-Safe Paw Bootie Fitting",
+    "providerName": "Urban Paws",
+    "providerEmail": "sales@urbanpaws.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 12,
+    "description": "Fitting for protective footwear to prevent ice melt chemicals and salt from irritating paws.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Indoor Agility Training",
+    "providerName": "The Play Zone",
+    "providerEmail": "train@playzone.com",
+    "price": 55,
+    "rating": 4.9,
+    "slotsAvailable": 6,
+    "description": "Energy-burning indoor obstacle courses for dogs when it is too cold for outdoor walks.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Exercise"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Nutrition Consultation",
+    "providerName": "Healthy Tails Nutrition",
+    "providerEmail": "diet@healthytails.com",
+    "price": 40,
+    "rating": 4.5,
+    "slotsAvailable": 8,
+    "description": "Adjusting caloric intake for pets who are less active in winter or need more energy for warmth.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Wellness"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Moisturizing Skin Therapy",
+    "providerName": "Silky Fur Spa",
+    "providerEmail": "spa@silkyfur.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "Specialized treatment to combat dry, flaky skin caused by indoor heating and low humidity.",
+    "image": "https://i.postimg.cc/example7.png",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Arthritis Care & Laser Therapy",
+    "providerName": "Senior Pet Clinic",
+    "providerEmail": "care@seniorpets.com",
+    "price": 75,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Cold weather can stiffen joints; this therapy helps manage pain for senior pets during winter.",
+    "image": "https://i.postimg.cc/example8.png",
+    "category": "Medical"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Short-Burst Winter Dog Walking",
+    "providerName": "QuickWalks Co.",
+    "providerEmail": "support@quickwalks.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 15,
+    "description": "High-frequency, short-duration walks to ensure exercise without overexposure to freezing temps.",
+    "image": "https://i.postimg.cc/example9.png",
+    "category": "Exercise"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Reflective Gear Installation",
+    "providerName": "NightOwl Safety",
+    "providerEmail": "safety@nightowl.com",
+    "price": 12,
+    "rating": 4.6,
+    "slotsAvailable": 20,
+    "description": "Adding high-visibility reflective strips to existing collars and leashes for dark winter evenings.",
+    "image": "https://i.postimg.cc/example10.png",
+    "category": "Safety"
+  }
+]
