@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from "react";
 import ServiceCard from "../components/ServiceCard";
+import { useNavigate } from "react-router";
+import Loading from "../components/Loading";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/service.json")
       .then((response) => response.json())
       .then((data) => {
         setServices(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error loading JSON", error);
+        setLoading(false);
       });
   }, []);
   const topServices = (services || []).slice(0, 8);
+
+  if (loading) return <Loading></Loading>;
   return (
     <div className="min-h-screen bg-[#f5f5f5] overflow-hidden">
       <div className="h-96">This is first div</div>
@@ -30,7 +41,7 @@ const Home = () => {
       </div>
       <div className="mt-8 mb-12 flex justify-center">
         <button
-          // onClick={() => navigate("/apps")}
+          onClick={() => navigate("/services")}
           className="btn btn-lg px-10 text-white text-lg bg-gradient-to-br from-blue-900 to-blue-500 border-none hover:scale-105 transition-transform"
         >
           Show All
