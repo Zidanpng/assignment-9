@@ -118,5 +118,29 @@
     "description": "Adding high-visibility reflective strips to existing collars and leashes for dark winter evenings.",
     "image": "https://i.postimg.cc/example10.png",
     "category": "Safety"
+  },
+  {
+    "serviceId": 11,
+    "serviceName": "Cold Weather Safety Workshop",
+    "providerName": "SafePaws Academy",
+    "providerEmail": "learn@safepaws.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 25,
+    "description": "An interactive online workshop for owners to learn about frostbite prevention and winter toxin safety (like antifreeze).",
+    "image": "https://i.postimg.cc/example11.png",
+    "category": "Education"
+  },
+  {
+    "serviceId": 12,
+    "serviceName": "Holiday Stress-Free Boarding",
+    "providerName": "Winter Wonderland Retreat",
+    "providerEmail": "stay@winterretreat.com",
+    "price": 60,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Quiet, climate-controlled boarding for pets who get anxious during winter holiday fireworks or loud gatherings.",
+    "image": "https://i.postimg.cc/example12.png",
+    "category": "Boarding"
   }
 ]

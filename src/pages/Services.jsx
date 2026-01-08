@@ -21,7 +21,7 @@ const Services = () => {
   if (loading) return <Loading></Loading>;
 
   const filteredApps = serviceData.filter((service) =>
-    service.title.toLowerCase().includes(searchTerm.toLowerCase())
+    service.serviceName.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

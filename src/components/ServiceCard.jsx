@@ -1,9 +1,9 @@
 import React from "react";
 import { FaDollarSign, FaStar } from "react-icons/fa";
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 
 const ServiceCard = ({ service }) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div>
       <div
@@ -18,7 +18,7 @@ const ServiceCard = ({ service }) => {
             className="w-full h-full object-contain  rounded-lg"
           />
         </div>
-        <h3 className="font-semibold text-gray-800 text-[23px] text-center py-3">
+        <h3 className="font-semibold text-gray-800 text-[23px] text-center py-2 line-clamp-1">
           {service.serviceName}
         </h3>
         <div className="flex items-center justify-between">
@@ -30,7 +30,7 @@ const ServiceCard = ({ service }) => {
               {service.rating}
             </span>
           </div>
-          <div className="flex items-center bg-[#F1F5E8] p-1 rounded-sm w-12">
+          <div className="flex items-center p-1 rounded-sm w-12">
             <span className="text-green-600">
               <FaDollarSign />
             </span>
@@ -40,7 +40,7 @@ const ServiceCard = ({ service }) => {
           </div>
         </div>
         <button
-          // onClick={() => navigate(`/service/${service.serviceId}`)}
+          onClick={() => navigate(`/service/${service.serviceId}`)}
           className="px-8 py-3 mt-3 bg-blue-600 text-white font-semibold rounded-full w-full"
         >
           View Details

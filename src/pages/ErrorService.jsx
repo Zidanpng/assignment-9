@@ -2,7 +2,7 @@ import React from "react";
 import error from "../assets/App-Error.png";
 import { useNavigate } from "react-router";
 
-const ErrorService = () => {
+const ErrorService = ({ onClear }) => {
   const navigate = useNavigate();
 
   return (
@@ -13,7 +13,7 @@ const ErrorService = () => {
           <img className="mx-auto mt-20 " src={error} alt="Error" />
         </div>
         <div className="text-center my-6">
-          <h1 className="text-3xl md:text-4xl font-bold my-3">
+          <h1 className="text-[#001931] text-3xl md:text-4xl font-bold my-3">
             OOPS!!SERVICE NOT FOUND
           </h1>
           <p className="text-gray-600 text-sm">
@@ -24,14 +24,14 @@ const ErrorService = () => {
         <div className="flex flex-col sm:flex-row mt-8 mb-12 items-center justify-center gap-4">
           <button
             onClick={() => navigate(-1)}
-            className="btn text-white text-lg w-full sm:w-auto px-8 bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform"
+            className="btn text-white text-lg w-full sm:w-auto px-8 border-none bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform"
           >
             Go Back
           </button>
           {onClear && (
             <button
               onClick={onClear}
-              className="btn text-white text-lg  w-full sm:w-auto px-8 bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform"
+              className="btn text-white text-lg  w-full sm:w-auto px-8 border-none  bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform"
             >
               Clear Search
             </button>
