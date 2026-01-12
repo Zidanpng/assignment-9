@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaDog } from "react-icons/fa";
-import { NavLink, useNavigate } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
+import { AuthContext } from "../providers/AuthProvider";
 
 const btnStyles = ({ isActive }) => {
   return isActive
@@ -8,6 +9,7 @@ const btnStyles = ({ isActive }) => {
     : "text-gray-600 hover:text-blue-500 transition-colors px-1 pb-1";
 };
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
 
   return (
@@ -45,11 +47,13 @@ const Navbar = () => {
                 Service Details
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/profile" className={btnStyles}>
-                My Profile
-              </NavLink>
-            </li>
+            {user && (
+              <li>
+                <NavLink to="/profile" className={btnStyles}>
+                  My Profile
+                </NavLink>
+              </li>
+            )}
           </ul>
         </div>
         <div
@@ -79,22 +83,52 @@ const Navbar = () => {
               Service Details
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/profile" className={btnStyles}>
-              My Profile
-            </NavLink>
-          </li>
+          {user && (
+            <li>
+              <NavLink to="/profile" className={btnStyles}>
+                My Profile
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
       <div className="navbar-end">
-        <div>
-          <NavLink
-            to="/register"
-            className="btn text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
-          >
-            LOG IN/REGISTER
-          </NavLink>
-        </div>
+        {user && user?.email ? (
+          <div className="flex items-center gap-3">
+            <div
+              className="tooltip tooltip-bottom"
+              data-tip={user?.displayName}
+            >
+              <div className="avatar">
+                <div className="w-10 rounded-full ring ring-blue-500 ring-offset-2">
+                  <img src={user?.photoURL} alt="" />
+                </div>
+              </div>
+            </div>
+            <button
+              onClick={logOut}
+              className="btn btn-sm md:btn-md text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+            >
+              LOG OUT
+            </button>
+          </div>
+        ) : (
+          <div className="flex gap-2">
+            <Link
+              to="/login"
+              className="btn btn-sm md:btn-md text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+            >
+              LOG IN
+            </Link>
+            <Link
+              to="/register"
+              className="btn text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+            >
+              REGISTER
+            </Link>
+          </div>
+        )}
+        <div></div>
       </div>
     </div>
   );

@@ -10,6 +10,8 @@ import Profile from "./pages/Profile";
 import Login from "./components/Login";
 import Register from "./pages/Register";
 import Error from "./pages/Error";
+import { AuthProvider } from "./providers/AuthProvider";
+import ForgetPass from "./components/ForgetPass";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
       {
+        path: "/forgetPass",
+        element: <ForgetPass></ForgetPass>,
+      },
+      {
         path: "*",
         element: <Error></Error>,
       },
@@ -49,6 +55,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );

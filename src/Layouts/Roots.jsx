@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 
 const Roots = () => {
   return (
-    <div>
+    <div className="bg-[#e6eef8]">
       <Navbar></Navbar>
       <div className="min-h-screen">
         <Outlet></Outlet>

@@ -25,7 +25,7 @@ const Services = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5] px-1 md:px-2 lg:px-4 py-2 md:py-6">
+    <div className="min-h-screen px-1 md:px-2 lg:px-4 py-2 md:py-6">
       <div className="px-1 md:px-2 lg:px-4 mx-auto">
         {/* header */}
         <div className="text-center mb-6">

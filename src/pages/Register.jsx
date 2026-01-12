@@ -43,7 +43,7 @@ const Register = () => {
                 <label className="label">Email</label>
                 <input
                   type="name"
-                  placeholder="name"
+                  placeholder="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="input"
