@@ -26,7 +26,6 @@ const Home = () => {
   if (loading) return <Loading></Loading>;
   return (
     <div className="min-h-screen overflow-hidden">
-      <div className="h-96">This is first div</div>
       <div className="px-2">
         <img className="mx-auto max-w-full h- " src={petCare} alt="" />
       </div>

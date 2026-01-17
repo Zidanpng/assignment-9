@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const Profile = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-blue-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
@@ -45,7 +47,10 @@ const Profile = () => {
 
           {/* action button */}
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full">
+            <button
+              onClick={() => navigate("/update")}
+              className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full"
+            >
               Update Profile
             </button>
           </div>

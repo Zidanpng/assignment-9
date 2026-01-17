@@ -12,6 +12,10 @@ import Register from "./pages/Register";
 import Error from "./pages/Error";
 import { AuthProvider } from "./providers/AuthProvider";
 import ForgetPass from "./components/ForgetPass";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Details from "./pages/Details";
+import { ToastContainer } from "react-toastify";
+import UpdateProfile from "./pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -27,12 +31,20 @@ const router = createBrowserRouter([
         element: <Services></Services>,
       },
       {
-        path: "/profile",
-        element: <Profile></Profile>,
+        path: "/service/:serviceId",
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
       },
       {
-        path: "/",
-        element: <Home></Home>,
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -47,6 +59,14 @@ const router = createBrowserRouter([
         element: <ForgetPass></ForgetPass>,
       },
       {
+        path: "/details",
+        element: <Details></Details>,
+      },
+      {
+        path: "/update",
+        element: <UpdateProfile></UpdateProfile>,
+      },
+      {
         path: "*",
         element: <Error></Error>,
       },
@@ -57,6 +77,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
+      <ToastContainer></ToastContainer>
     </AuthProvider>
   </StrictMode>
 );
