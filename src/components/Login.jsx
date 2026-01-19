@@ -42,9 +42,9 @@ const Login = () => {
           <h1 className="text-5xl font-bold">Welcome Back</h1>
           <p className="mt-2">Login to access your pet's winter care</p>
         </div>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <div className="card-body">
-            <form onSubmit={handleLogin} className="card-body p-8">
+        <div className="bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-lg">
+          <div className="">
+            <form onSubmit={handleLogin} className=" p-8">
               <div className="form-control">
                 <label className="label">Email</label>
                 <input
@@ -100,7 +100,7 @@ const Login = () => {
                   Continue with Google
                 </button>
               </div>
-              <p className="text-center">
+              <p className="text-center mt-2">
                 New to the website? Please{" "}
                 <Link
                   to="/register"

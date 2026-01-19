@@ -8,7 +8,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
-    "image": "https://i.postimg.cc/example1.png",
+    "image": "https://i.postimg.cc/63MqWQHM/Coat-fitting.webp",
     "category": "Clothing"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
-    "image": "https://i.postimg.cc/example2.png",
+    "image": "https://i.postimg.cc/bJpSYWp5/Paw-Care.avif",
     "category": "Grooming"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.7,
     "slotsAvailable": 10,
     "description": "Safety-certified heated bed setup and insulation check for your pet's favorite sleeping spot.",
-    "image": "https://i.postimg.cc/example3.png",
+    "image": "https://i.postimg.cc/k59gWSzW/heated-beds.webp",
     "category": "Home Comfort"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.6,
     "slotsAvailable": 12,
     "description": "Fitting for protective footwear to prevent ice melt chemicals and salt from irritating paws.",
-    "image": "https://i.postimg.cc/example4.png",
+    "image": "https://i.postimg.cc/tJ1q9Nnq/Salt-Safe.webp",
     "category": "Clothing"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.9,
     "slotsAvailable": 6,
     "description": "Energy-burning indoor obstacle courses for dogs when it is too cold for outdoor walks.",
-    "image": "https://i.postimg.cc/example5.png",
+    "image": "https://i.postimg.cc/Hk1YC5pf/agility.webp",
     "category": "Exercise"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.5,
     "slotsAvailable": 8,
     "description": "Adjusting caloric intake for pets who are less active in winter or need more energy for warmth.",
-    "image": "https://i.postimg.cc/example6.png",
+    "image": "https://i.postimg.cc/W4XTrHMp/Nutrition.jpg",
     "category": "Wellness"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.8,
     "slotsAvailable": 5,
     "description": "Specialized treatment to combat dry, flaky skin caused by indoor heating and low humidity.",
-    "image": "https://i.postimg.cc/example7.png",
+    "image": "https://i.postimg.cc/RhnBkC24/Moisturizing.webp",
     "category": "Grooming"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Cold weather can stiffen joints; this therapy helps manage pain for senior pets during winter.",
-    "image": "https://i.postimg.cc/example8.png",
+    "image": "https://i.postimg.cc/KvBKLm4X/Arthritis.jpg",
     "category": "Medical"
   },
   {
@@ -104,7 +104,7 @@
     "rating": 4.7,
     "slotsAvailable": 15,
     "description": "High-frequency, short-duration walks to ensure exercise without overexposure to freezing temps.",
-    "image": "https://i.postimg.cc/example9.png",
+    "image": "https://i.postimg.cc/jj5d8Tqh/dog-two.webp",
     "category": "Exercise"
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.6,
     "slotsAvailable": 20,
     "description": "Adding high-visibility reflective strips to existing collars and leashes for dark winter evenings.",
-    "image": "https://i.postimg.cc/example10.png",
+    "image": "https://i.postimg.cc/sxpVBDmk/dog.webp",
     "category": "Safety"
   },
   {
@@ -128,7 +128,7 @@
     "rating": 4.7,
     "slotsAvailable": 25,
     "description": "An interactive online workshop for owners to learn about frostbite prevention and winter toxin safety (like antifreeze).",
-    "image": "https://i.postimg.cc/example11.png",
+    "image": "https://i.postimg.cc/DwC74NrH/cat-sleeping.webp",
     "category": "Education"
   },
   {
@@ -140,7 +140,7 @@
     "rating": 4.9,
     "slotsAvailable": 2,
     "description": "Quiet, climate-controlled boarding for pets who get anxious during winter holiday fireworks or loud gatherings.",
-    "image": "https://i.postimg.cc/example12.png",
+    "image": "https://i.postimg.cc/ydRK5YM3/ginger-cat.webp",
     "category": "Boarding"
   }
 ]

@@ -1,15 +1,26 @@
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { auth } from "../firebase/firebase.init";
 import { toast } from "react-toastify";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
+  const { googleSignIn } = useContext(AuthContext);
+
+  const handleGoogleLogin = () => {
+    googleSignIn()
+      .then(() => {
+        toast.success("Logged in With Google!");
+        navigate("/");
+      })
+      .catch((err) => toast.error(err.message));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -33,7 +44,7 @@ const Register = () => {
 
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        updateProfile(auth.currentUser, {
+        updateProfile(userCredential.user, {
           displayName: name,
           photoURL: photo,
         }).then(() => {
@@ -95,6 +106,17 @@ const Register = () => {
                 <button className="btn btn-neutral mt-4 bg-gradient-to-br from-blue-900 to-blue-500 border-none text-white hover:scale-105 transition-transform">
                   Register
                 </button>
+                <div className="divider text-gray-400 text-sm">OR</div>
+                <div className="form-control">
+                  <button
+                    type="button"
+                    onClick={handleGoogleLogin}
+                    className="btn btn-outline border-gray-300 hover:bg-gray-50 hover:text-blue-900 gap-3 w-full"
+                  >
+                    <FaGoogle />
+                    Continue with Google
+                  </button>
+                </div>
               </fieldset>
             </form>
             <p className="text-center">

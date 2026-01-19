@@ -21,7 +21,7 @@ const Services = () => {
   if (loading) return <Loading></Loading>;
 
   const filteredApps = serviceData.filter((service) =>
-    service.serviceName.toLowerCase().includes(searchTerm.toLowerCase())
+    service.serviceName.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   return (
@@ -72,7 +72,9 @@ const Services = () => {
         {filteredApps.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {filteredApps.map((service) => (
-              <ServiceCard key={service.id} service={service}></ServiceCard>
+              <div key={service.serviceId} data-aos="fade-up">
+                <ServiceCard service={service}></ServiceCard>
+              </div>
             ))}
           </div>
         ) : (

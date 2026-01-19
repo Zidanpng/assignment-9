@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Profile = () => {
   const navigate = useNavigate();
+  const { user } = useContext(AuthContext);
+
   return (
     <div className="min-h-screen bg-blue-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
@@ -10,7 +13,7 @@ const Profile = () => {
         <div className="h-40 bg-gradient-to-br from-blue-900 to-blue-500 relative">
           <div className="absolute -bottom-16 left-1/2 -translate-x-1/2">
             <img
-              src=""
+              src={user.photoURL}
               alt="profile pic"
               className="w-32 h-32 rounded-full border-4 border-white object-cover shadow-lg"
             />
@@ -19,7 +22,7 @@ const Profile = () => {
         {/* user info */}
         <div className="pt-20 pb-10 px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-800">
-            Welcome back, Mosaddeque
+            Welcome back, {user.displayName}
           </h2>
           <p className="text-gray-500 mt-2 mb-8 italic">
             "Keep your furry friends cozy this winter."
@@ -31,7 +34,7 @@ const Profile = () => {
                 Full Name
               </label>
               <p className="text-lg font-medium text-gray-700">
-                Mosaddeque Hasan Zidan
+                {user.displayName}
               </p>
             </div>
 
@@ -39,9 +42,7 @@ const Profile = () => {
               <label className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
                 Email Address
               </label>
-              <p className="text-lg font-medium text-gray-700">
-                zidanbot3286@gmail.com
-              </p>
+              <p className="text-lg font-medium text-gray-700">{user.email}</p>
             </div>
           </div>
 
