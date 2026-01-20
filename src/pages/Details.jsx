@@ -52,7 +52,7 @@ const Details = () => {
     <div className="bg-[#f5f5f5] min-h-screen  px-4 md:px-6 lg:p-8">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-2 text-blue-700 font font-bold py-4 "
+        className="flex items-center gap-2 text-blue-600 font font-bold py-4 "
       >
         <IoArrowBack />
         Go Back
@@ -91,17 +91,61 @@ const Details = () => {
                 </p>
               </div>
             </div>
-            <button
-              disabled={isBooked}
-              onClick={handleBooking}
-              className={`w-full sm:w-auto px-8 py-3 rounded-md font-semibold text-white transition-all ${
-                isBooked
-                  ? "bg-blue-400 cursor-not-allowed"
-                  : "bg-blue-500 hover:bg-blue-600"
-              }`}
-            >
-              {isBooked ? "Already Booked" : "Book This Service"}
-            </button>
+            <div className="mt-6">
+              {!isBooked ? (
+                <button
+                  className="btn bg-gradient-to-br from-blue-900 to-blue-500 text-white hover:scale-105 transition-transform w-full sm:w-auto px-8 py-3 rounded-md font-semibold border-none"
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  Book This Service
+                </button>
+              ) : (
+                <button
+                  disabled
+                  className="bg-blue-400 cursor-not-allowed w-full sm:w-auto px-8 py-3 rounded-md font-semibold text-white transition-all"
+                >
+                  Already Booked
+                </button>
+              )}
+              <div>
+                <dialog id="my_modal_2" className="modal">
+                  <div className="modal-box relative">
+                    <div className="flex items-center justify-between">
+                      <h3 className="font-bold text-lg">
+                        Confirm Your Details
+                      </h3>
+                      <form method="dialog">
+                        <button className="btn btn-sm btn-circle btn-ghost">
+                          ✕
+                        </button>
+                      </form>
+                    </div>
+                    <div className="py-4 space-y-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="input w-full"
+                        placeholder="name"
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="email"
+                        className="input w-full"
+                      />
+                      <button
+                        onClick={handleBooking}
+                        className="btn btn-primary w-full"
+                      >
+                        Confirm Booking
+                      </button>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
           </div>
         </div>
         <hr className="my-5" />

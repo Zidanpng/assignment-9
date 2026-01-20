@@ -1,16 +1,16 @@
-# React + Vite
+Project Name:Pet-Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I created This website as a way to help your furry friend.
 
-Currently, two official plugins are available:
+LIVE URL: https://pet-care09.zidanbot3286.workers.dev/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can get different services depending on your furry friends needs.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm list --depth=0@eslint/js@9.39.2
+├── aos@2.3.4
+├── daisyui@5.5.14
+├── lucide-react@0.562.0
+├── react-icons@5.5.0
+├── react-toastify@11.0.5
+├── swiper@12.0.3
+└── tailwindcss@4.1.18
