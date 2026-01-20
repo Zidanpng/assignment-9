@@ -122,7 +122,7 @@ const Navbar = () => {
             </Link>
             <Link
               to="/register"
-              className="btn text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+              className="btn btn-sm md:btn-md  text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
             >
               REGISTER
             </Link>

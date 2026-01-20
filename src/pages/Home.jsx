@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Review from "./Review";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Home = () => {
   if (loading) return <Loading></Loading>;
   return (
     <div className="min-h-screen overflow-hidden">
-      <section className="h-80 md:h-125px w-full mb-10 z-0">
+      <section className="h-100 md:h-125px w-full mb-10 z-0">
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
@@ -49,7 +50,8 @@ const Home = () => {
             <div
               className="bg-blue-100 h-full flex items-center justify-center p-10"
               style={{
-                backgroundImage: "url('https://i.postimg.cc/winter-bg1.png')",
+                backgroundImage:
+                  "url('https://i.postimg.cc/Y9yDTDsb/dog-coat.png')",
                 backgroundSize: "cover",
               }}
             >
@@ -59,8 +61,14 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-purple-100 h-full flex items-center justify-center text-center p-10">
-              <h2 className="text-4xl font-bold text-blue-900">
+            <div
+              className="bg-purple-100 h-full flex items-center justify-center text-center p-10"
+              style={{
+                backgroundImage: "url('https://i.postimg.cc/C5bh18D4/cat.jpg')",
+                backgroundSize: "cover",
+              }}
+            >
+              <h2 className="text-4xl font-bold text-white">
                 Keep Their paws Warm & Safe
               </h2>
             </div>
@@ -127,6 +135,9 @@ const Home = () => {
             <p className="text-sm text-gray-500">Paw Specialist</p>
           </div>
         </div>
+      </section>
+      <section>
+        <Review></Review>
       </section>
     </div>
   );

@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { AuthContext } from "../providers/AuthProvider";
 
 const UpdateProfile = () => {
-  const { user } = useContext(AuthContext);
+  const { user, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleUpdate = (e) => {
