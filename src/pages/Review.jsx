@@ -77,13 +77,13 @@ const Review = () => {
         </button> */}
         <div
           to="/register"
-          className="btn btn-sm md:btn-md  text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+          className="btn btn-sm md:btn-lg  text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
         >
           Write a Review
         </div>
         <div
           to="/register"
-          className="btn btn-sm md:btn-md  text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
+          className="btn btn-sm md:btn-lg  text-white bg-gradient-to-br from-blue-900 to-blue-500 hover:scale-105 transition-transform border-none"
         >
           Read More Reviews
         </div>
